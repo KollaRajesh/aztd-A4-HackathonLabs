@@ -62,7 +62,7 @@ namespace generate_image
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace.ToString());
             }
         }
     }

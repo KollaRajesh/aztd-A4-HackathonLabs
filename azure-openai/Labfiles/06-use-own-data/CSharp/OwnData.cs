@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Azure;
 
+
 // Add Azure OpenAI package
 using Azure.AI.OpenAI;
 
@@ -28,7 +29,15 @@ OpenAIClient client = new OpenAIClient(new Uri(oaiEndpoint), new AzureKeyCredent
 Console.WriteLine("Enter a question:");
 string text = Console.ReadLine() ?? "";
 
-// Configure your data source
+			// Configure your data source
+AzureSearchChatExtensionConfiguration ownDataConfig = new()
+{
+        SearchEndpoint = new Uri(azureSearchEndpoint),
+        Authentication = new OnYourDataApiKeyAuthenticationOptions(azureSearchKey),
+        IndexName = azureSearchIndex
+};
+			
+
 
 
 // Send request to Azure OpenAI model  

@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "02-azure-openai-api",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/azure-openai/Labfiles/02-azure-openai-api/CSharp/bin/Debug/net8.0/CSharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/azure-openai/Labfiles/02-azure-openai-api/CSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+         {
+            "name": "03-prompt-engineering",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/azure-openai/Labfiles/03-prompt-engineering/CSharp/bin/Debug/net8.0/CSharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/azure-openai/Labfiles/03-prompt-engineering/CSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+         {
+            "name": "04-code-generation",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/azure-openai/Labfiles/04-code-generation/CSharp/bin/Debug/net8.0/CSharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/azure-openai/Labfiles/04-code-generation/CSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+         {
+            "name": "05-image-generation",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/azure-openai/Labfiles/05-image-generation/CSharp/bin/Debug/net8.0/generate_image.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/azure-openai/Labfiles/05-image-generation/CSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+         {
+            "name": "06-use-own-data",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/azure-openai/Labfiles/06-use-own-data/CSharp/bin/Debug/net8.0/CSharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/azure-openai/Labfiles/06-use-own-data/CSharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
